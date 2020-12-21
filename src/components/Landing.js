@@ -5,7 +5,12 @@ class Landing extends Component {
 
 
     render() {
-        return {/* your code here */ }
+        return(
+            <div>
+                <div>Welcome {this.props.user}, The hottest item is {this.props.hottest.item} for {this.props.hottest.price}</div>
+                <hr/>
+            </div>
+        )
 
     }
 }

@@ -11,8 +11,9 @@ class Wardrobe2 extends Component {
       { type: "accessory", color: "lilac", size: "" },
     ]
 
-    return
-    {/* your code here */ }
+    return(
+      wardrobe.filter(c => c.color === "blue").map(w => <Article info={w} key={`${w.color} ${w.type}`}/> )
+    )
 
   }
 }
